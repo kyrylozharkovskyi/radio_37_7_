@@ -9,18 +9,25 @@
 
 </head>
 <body>
-  <h1>🎶 37,7 Radio Live</h1>
+
+  <h1><i class="fa-solid fa-headphones"></i> 37,7 Radio Live</h1>
 
   <div class="player">
-    <p>Jebasz SUDOJ:</p>
-    <button id="playButton"></button>
+
+    <button id="playButton"><i class="fa-solid fa-play"></i></button>
     <audio id="radioPlayer" controls>
-      <source src="https://ying-figgier-melania.ngrok-free.dev/stream" type="audio/mpeg">
+      <!-- <source src="http://localhost:8000/stream" type="audio/mpeg"> -->
+      <source src="https://utc-uniform-seq-atlanta.trycloudflare.com/stream" type="audio/mpeg">
+
       Twoja przeglądarka nie obsługuje odtwarzacza audio.
     </audio>
 
-    <!-- <p id="current-track">⏳ Ładowanie informacji o utworze...</p> -->
+    <!-- Pasek tytułu przewijający się -->
+    <div class="track-marquee">
+      <div id="current-track" class="track-text">⏳ Ładowanie informacji o utworze...</div>
+    </div>
   </div>
+
 
   <div class="ocean">
     <div class="wave"></div>
@@ -28,8 +35,13 @@
   </div>
 
   <div class="footer">
-    Powered by Icecast + Mixxx + Ngrok + Kyrylo Zharkovksyi🚀
+    Powered by 
+    <i class="fa-solid fa-wifi"></i> Icecast + 
+    <i class="fa-solid fa-headphones"></i> Mixxx + 
+    <i class="fa-brands fa-cloudflare"></i> Cloudflare + 
+    <i class="fa-solid fa-user"></i> Kyrylo Zharkovksyi
   </div>
+
 
   <script src="script.js"></script>
 </body>
