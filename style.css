@@ -48,12 +48,23 @@ audio {
 }
 
 /* === STOPKA === */
+
 .footer {
-  margin-top: 60px;
+  margin-top: 50px;
   font-size: 0.9em;
   color: var(--color-text-light);
   opacity: 0.8;
 }
+.footer a {
+  color: white;           /* biały kolor tekstu */
+  font-weight: bold;      /* pogrubiony */
+  text-decoration: none;  /* usuwa podkreślenie */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* opcjonalnie podkreślenie przy najechaniu */
+}
+
 
 
 /* === PRZYCISK PLAY === */
