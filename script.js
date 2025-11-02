@@ -19,7 +19,7 @@ playButton.addEventListener('click', () => {
 async function updateTrack() {
   try {
     // const res = await fetch('http://localhost:8000/status-json.xsl'); // lub Twój tunel Cl0oudflared
-    const res = await fetch('https://utc-uniform-seq-atlanta.trycloudflare.com/status-json.xsl'); // lub Twój tunel Cloudflared
+    const res = await fetch('https://uses-mae-machine-buffalo.trycloudflare.com/status-json.xsl'); // lub Twój tunel Cloudflared
     const data = await res.json();
 
     // Dla pojedynczego źródła

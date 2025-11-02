@@ -47,6 +47,38 @@ audio {
   border-radius: 10px;
 }
 
+
+.photo-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: var(--color-player-bg, rgba(255,255,255,0.1));
+  box-shadow: 0 0 20px rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  opacity: 0.8;
+  z-index: 9999;
+}
+
+.photo-container img {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; 
+  display: block;
+
+  /* Szare zdjęcie */
+  filter: grayscale(100%);
+}
+
+
 /* === STOPKA === */
 
 .footer {
